@@ -1,0 +1,90 @@
+@import 'reset.css';
+
+body{
+	background-color: #282828;
+	color: #FFF;
+	height: 100vh;  
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.weather{
+	width: 320px;
+	height: 453px;
+	border-radius: 16px;
+	background: linear-gradient(167deg, #42D2A6 4.7%, #007991 95.98%), #389196;	
+}
+
+.form{
+	height: 40px;
+	margin: 30px 20px 10px;
+	display: flex;
+	align-items:stretch;
+	
+	border-radius: 60px;
+	background: #FFF;	
+}
+
+.form_input{
+	flex-grow: 1;
+	padding-left: 20px;
+	padding-right: 10px;
+	color:#282828;
+}
+
+.form_btn{
+padding: 10px 10px;
+}
+
+.weather_details{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+.weather_img{
+	width: 110px;
+	height: 110px;
+}
+.weather_temp{
+	text-align: center;
+	font-size: 56px;
+	font-weight: 700;
+}
+.weather_city{
+	text-align: center;
+	font-size: 38px;
+	font-weight: 500;
+}
+
+
+.weather_info{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin: 20px 20px 30px;
+}
+.details_img{
+	width: 36px;
+	grid-row: 1/3;
+	align-self:center;
+}
+.details{
+	display: grid;
+	grid-template-columns: 36px auto;
+	grid-template-rows: auto auto;
+	column-gap: 10px;
+}
+.details_value{
+font-size: 20px;
+font-weight: 300;
+}
+.details_title{
+font-size: 14px;
+font-weight: 300;
+}
+
+
+
