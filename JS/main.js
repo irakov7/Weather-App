@@ -1,4 +1,3 @@
-
 const API_key = '963f713e2dc986f6e2f39d1c9e57ed88';
 const form = document.querySelector('#form');
 const input = document.querySelector('.form_input');
@@ -33,7 +32,7 @@ async function submitHandler (e) {
 }
 
 async function getGeo (name) {
-	const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=5&appid=${API_key}`);
+	const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=5&appid=${API_key}`);
 	const data = await response.json();
 	return data;
 }
@@ -66,12 +65,6 @@ async function updateTemperature() {
 	}
 }
 updateTemperature();
-
-
-
-
-
-
 
 function renderWeatherData (data) {
 	const temp = document.querySelector('.weather_temp');
